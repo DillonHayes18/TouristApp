@@ -1,0 +1,42 @@
+ion-menu-button {
+  color: #ffffff;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--ion-color-dark);
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+
+ion-menu {
+  --ion-background-color: var(--ion-color-primary);
+  --ion-text-color: var(--ion-color-primary-contrast);
+
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+  }
+
+  ion-list {/* optional, but it needs when you use gradient as a background color.*/
+    background: transparent;
+  }
+}
