@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <ion-card>
+      <ion-card-content>
+        <p>
+           The latest weather from Ireland. 
+        </p>
+        <ion-spinner *ngIf="!weather"  name="dots"></ion-spinner>
+      </ion-card-content>
+    </ion-card>
+    <ion-card *ngFor="let weather of weather">
+      <ion-card-header>
+     The current weather is: {{weather.main}}
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+         Weather description: {{weather.description}}
+        </p>          
+      </ion-card-content>
+    </ion-card>  
+    
+    <h1>Galways Climate</h1>
+    <p>
+      Like most of Ireland, Galway has an oceanic climate according to the Köppen climate classification, being one of the world's mildest cities for latitude, partly because it is on an island. Galway has a year-round mild, moist, temperate and changeable climate, due to the prevailing winds of the North Atlantic Current together with the Gulf Stream (on the other side of the Atlantic temperatures can be 20 °C cooler or more.). The city does not experience temperature extremes, with temperatures below 0 °C (32 °F) and above 30 °C (86 °F) being rare. The city receives an average of 1,156 mm (45.51 in) of precipitation annually, which is evenly distributed throughout the year. The average January temperature in the city is 5.9 °C (43 °F) and the average July temperature is 15.9 °C (61 °F). The highest temperature ever recorded in Galway was 31.7 °C (89.1 °F) in July 1921, whilst the lowest temperature recorded was −11.7 °C (10.9 °F) in January 1945.
+    </p>
+    <p>
+      While extreme weather is rare, the city and county can experience severe windstorms that are the result of vigorous Atlantic depressions that occasionally pass along the north west coast of Ireland. Most of these storms occur between late autumn and early spring. Due to the city's northerly location, Galway has long summer days. Sunrise on summer solstice occurs at 05:07 WEST and sunset at 22:07. By contrast, on winter solstice, the sun rises at 08:49 WET, and sets at 16:19.
+    </p>
+</ion-content>
+

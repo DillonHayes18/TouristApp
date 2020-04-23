@@ -14,22 +14,22 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: 'Home',
-      url: '/folder/Inbox',
+      url: '/folder/Home',
       icon: 'home'
     },
     {
       title: 'Weather',
-      url: '/folder/Outbox',
+      url: '/weather',
       icon: 'cloudy-night'
     },
     {
       title: 'News',
-      url: '/folder/Favorites',
+      url: '/news',
       icon: 'mail'
     },
     {
-      title: 'Stuff to do',
-      url: '/folder/Activites',
+      title: 'Galway Activites',
+      url: '/activities',
       icon: 'bicycle'
     }
   ];
