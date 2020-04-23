@@ -28,9 +28,19 @@ export class AppComponent implements OnInit {
       icon: 'mail'
     },
     {
-      title: 'Galway Activites',
-      url: '/activities',
-      icon: 'bicycle'
+      title: 'Login',
+      url: '/login',
+      icon: 'person'
+    },
+    {
+    title: 'Register',
+    url: '/register',
+    icon: 'thumbs-up'
+    },
+    {
+      title: 'Forgot Password',
+      url: '/password',
+      icon: 'warning'
     }
   ];
 

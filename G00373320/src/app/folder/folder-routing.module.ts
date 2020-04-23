@@ -18,9 +18,17 @@ const routes: Routes = [
     loadChildren: () => import('../weather/weather.module').then( m => m.WeatherPageModule)
   },
   {
-    path: 'activities',
-    loadChildren: () => import('../activities/activities.module').then( m => m.ActivitiesPageModule)
-  }, 
+    path: 'login',
+    loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('../register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('../password/password.module').then( m => m.PasswordPageModule)
+  } 
 ];
 
 @NgModule({

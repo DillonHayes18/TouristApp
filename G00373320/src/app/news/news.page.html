@@ -17,14 +17,14 @@
       </ion-card-content>
     </ion-card>
     <ion-card *ngFor="let article of articles">
-      <ion-img src="{{article.urlToImage}}"></ion-img>
+      <ion-img src="{{article.urlToImage}}"></ion-img><!--Displays the articles URL-->
       <ion-card-header>
         <ion-card-subtitle>{{article.title}}</ion-card-subtitle>
       </ion-card-header>
       <ion-card-content>
         <p>
-          {{article.description}}
-        </p>
+          {{article.description}} <!--Loads the article description stored-->
+        </p><!--Button to view full article-->
         <ion-button ion-button fill="outline" href="{{article.url}}" large>Read full article</ion-button>
   
       </ion-card-content>

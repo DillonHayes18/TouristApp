@@ -11,7 +11,7 @@ export class NewsPage implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ionViewDidEnter(){
-
+    //Calls the get news and subsrcibes data before assigning to articles
     this.apiService.getNews().subscribe((data)=>{
       console.log(data);
       this.articles = data['articles'];
